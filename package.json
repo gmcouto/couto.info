@@ -1,23 +1,20 @@
 {
-  "name": "couto.info",
-  "version": "1.0.0",
-  "description": "My Website",
-  "main": "index.js",
-  "dependencies": {
-    "vuepress": "^1.0.2"
-  },
-  "devDependencies": {},
+  "name": "gridsome-starter-blog",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gmcouto/couto.info.git"
+  "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/remark-prismjs": "^0.0.4",
+    "@gridsome/source-filesystem": "^0.3.0",
+    "@gridsome/transformer-remark": "^0.2.0",
+    "gridsome": "^0.5.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gmcouto/couto.info/issues"
-  },
-  "homepage": "https://github.com/gmcouto/couto.info#readme"
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  }
 }
