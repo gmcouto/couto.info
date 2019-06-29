@@ -1,5 +1,5 @@
 ---
-date: 2019-06-28 22:11:31 -0300
+date: 2019-06-28
 tags:
 - Tech
 title: My First Forestry Test
