@@ -41,6 +41,11 @@ fields:
   default: []
   label: Tags
   description: Tags related to your post
+- name: cover_image
+  type: file
+  config:
+    maxSize: 250
+  label: Cover Image
 - name: slug
   type: text
   config:
