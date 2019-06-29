@@ -20,8 +20,8 @@ instant_preview: true
 build:
   preview_command: vuepress build -d .vuepress/dist
   publish_command: vuepress build -d .vuepress/dist
-  preview_output_directory: ".vuepress/dist"
+  preview_output_directory: dist
   output_directory: ".vuepress/dist"
-  instant_preview_command: npx vuepress dev -p 8080 -h 0.0.0.0
+  instant_preview_command: npx gridsome develop -p 8080 -h 0.0.0.0
   preview_docker_image: node:10
   mount_path: "/srv"
