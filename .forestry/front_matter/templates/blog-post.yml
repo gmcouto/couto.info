@@ -52,3 +52,5 @@ fields:
 - name: series
   type: boolean
   label: Series
+pages:
+- posts/my-first-forestry-test.md
