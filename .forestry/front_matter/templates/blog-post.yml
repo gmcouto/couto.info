@@ -5,14 +5,49 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
+  description: Title of this blog post
+  hidden: false
 - name: date
   type: datetime
-  label: date
-  description: ''
+  label: Date
+  description: The date of the post
+  config:
+    required: true
+    date_format: YYYY-MM-DD
+    time_format: " "
+    display_utc: false
+  default: now
+- name: description
+  type: textarea
+  default: ''
   config:
     required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+  description: Brief description of the post
+- name: published
+  type: boolean
+  label: Published
+  description: Is it public?
+  default: false
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags related to your post
+- name: slug
+  type: text
+  config:
+    required: false
+  label: Slug
+  description: Custom slug
+- name: canonical_url
+  type: boolean
+  label: Canonical Url
+- name: series
+  type: boolean
+  label: Series
