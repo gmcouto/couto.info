@@ -5,7 +5,7 @@
     </h1>
 
     <div class="posts">
-      <PostCard v-for="edge in $page.tag.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.allPost.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
   </Layout>
 </template>
@@ -14,10 +14,10 @@
 query Tag ($id: String!) {
   tag (id: $id) {
     title
-    belongsTo {
-      edges {
-        node {
-          ...on Post {
+  }
+  allPost(filter: { tags: {contains: [$id]} published: { eq: true }}) {
+    edges {
+      node {
             title
             path
             date (format: "D. MMMM YYYY")
@@ -25,8 +25,6 @@ query Tag ($id: String!) {
             description
             coverImage (width: 860, blur: 10)
             content
-          }
-        }
       }
     }
   }
