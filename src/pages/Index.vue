@@ -49,7 +49,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Blog'
+    title: 'Couto.Info'
   }
 }
 </script>
