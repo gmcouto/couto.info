@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Couto dot Info',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteName: 'index out of bounds',
+  siteDescription: 'A programmer\'s log with things that I wish I knew when I needed.',
 
   plugins: [
     {
