@@ -8,12 +8,13 @@
 		</h1>
 
 		<p class="author__intro">
-			A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+			{{ $static.metaData.siteDescription }}
 		</p>
 
 		<p class="author__links">
 			<a href="//twitter.com/gmcouto">Twitter</a>
 			<a href="//github.com/gmcouto">GitHub</a>
+			<a href="//linkedin.com/in/gmcouto">LinkedIn</a>
 		</p>
 
 	</div>
@@ -23,6 +24,7 @@
 query {
   metaData {
     siteName
+    siteDescription
   }
 }
 </static-query>
