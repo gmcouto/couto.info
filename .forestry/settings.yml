@@ -20,6 +20,7 @@ build:
   preview_output_directory: dist
   output_directory: ".vuepress/dist"
   instant_preview_command: npx gridsome develop -p 8080 -h 0.0.0.0
+  install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
   working_dir: "/srv"

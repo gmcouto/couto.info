@@ -59,5 +59,6 @@ fields:
   type: boolean
   label: Series
 pages:
+- posts/new-post-from-forestry.md
 - posts/test-with-cover-image.md
 - posts/my-first-forestry-test.md
