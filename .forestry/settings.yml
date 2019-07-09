@@ -15,7 +15,7 @@ front_matter_path: "../static/uploads"
 use_front_matter_path: true
 file_template: ":year:-:month:-:day:-:filename:"
 build:
-  preview_command: npm build
+  preview_command: npx gridsome build
   publish_command: vuepress build -d .vuepress/dist
   preview_output_directory: dist
   output_directory: ".vuepress/dist"
