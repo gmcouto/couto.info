@@ -4,7 +4,7 @@ tags:
 - forestry
 title: Another forestry.io test
 description: The home page brief
-published: false
+published: true
 cover_image: "../static/uploads/2019-06-29-animação.png"
 slug: ''
 canonical_url: true
