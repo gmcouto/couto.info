@@ -28,9 +28,9 @@ Today we will learn how we can leverage the openapi-first approach into the deve
 
 ### OpenAPI Specification
 
-You probably have heard of Swagger at least once, right? They were the ones that kind of standardized a way to write api first, and generate code later. Eventually they open-sourced this standard, and is a way to describe RESTful webservices.
+You probably have heard of Swagger at least once, right? They were the ones that kind of standardized a way to write api first, and generate code later. Eventually they open-sourced this standard, and called it ["OpenAPI Specification"](https://swagger.io/specification/ "OpenAPI Specification Website"). It is just a way to describe RESTful webservices.
 
-How it works? It's easier to show:
+What do I mean? It's easier to show:
 
     openapi: 3.0.2
     info:
@@ -64,4 +64,12 @@ How it works? It's easier to show:
             '400':
               description: "Bad Request"
 
-As you may figure out, this is a simple service that turn some input string on `/uppercase` endpoint and returns it in uppercase. 
+This is the simplest example I can think of: it is a path named `/uppercase`, and when you POST a string to this endpoint, it will return the same string in uppercase. Of course, using this specification you can describe way more complex services, with their object model specification, authentication schemes, etc.
+
+**How will this help you?** By using _code generators_.
+
+### OpenAPI Generator
+
+One of the greatest works that has been done over OpenAPI specification, is the [OpenAPI Generator](https://openapi-generator.tech/ "OpenAPI Generator"). It is a tool, that you plug-in into your Maven, Gradle, or whatever build tool, or even whatever language you have... that will create all the code for this RESTful web-service, for except the implementation.
+
+But you can count on controllers, paths, models, validators and documentation... everything available for the generator you are using (some languages may vary the amount of work the generator does, but you can contribute to improve it). In this example, I'll be showing you the Maven plugin, that integrates the OpenAPI specification, into your java project, using Spring as the controller, and Swagger as documentation.
