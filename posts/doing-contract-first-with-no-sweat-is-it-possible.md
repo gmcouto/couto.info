@@ -28,4 +28,40 @@ Today we will learn how we can leverage the openapi-first approach into the deve
 
 ### OpenAPI Specification
 
-You probably have heard of Swagger at least once, right? They were the ones that kind of standardized a way to write api first, and generate code later. Eventually they open-sourced this standard, and is a way to describe RESTful webservices. How it works? It's easier to show:
+You probably have heard of Swagger at least once, right? They were the ones that kind of standardized a way to write api first, and generate code later. Eventually they open-sourced this standard, and is a way to describe RESTful webservices.
+
+How it works? It's easier to show:
+
+    openapi: 3.0.2
+    info:
+      title: Sample API
+      contact:
+        name: Gabriel Couto
+      version: 1.0.0
+    
+    paths:
+    /uppercase:
+        post:
+          summary: Make any string uppercase
+          operationId: postToUppercase
+          requestBody:
+            description: "A message"
+            required: true
+            content:
+              text/plain;charset=utf-8:
+                schema:
+                  type: string
+                  minLength: 1
+                  example: "some message to convert"
+          responses:
+            '200':
+              description: "OK"
+              content:
+                text/plain;charset=utf-8:
+                  schema:
+                    type: string
+                    example: "SOME MESSAGE TO CONVERT"
+            '400':
+              description: "Bad Request"
+
+As you may figure out, this is a simple service that turn some input string on `/uppercase` endpoint and returns it in uppercase. 
