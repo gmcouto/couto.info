@@ -9,7 +9,7 @@ tags:
 - open-api
 title: doing contract-first with no sweat, is it possible?
 description: ''
-published: false
+published: true
 cover_image: ''
 slug: ''
 canonical_url: false
