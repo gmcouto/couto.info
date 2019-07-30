@@ -75,3 +75,13 @@ This is the simplest example I can think of: it is a path named `/uppercase`, an
 One of the greatest works that has been done over OpenAPI specification, is the [OpenAPI Generator](https://openapi-generator.tech/ "OpenAPI Generator"). It is a tool, that you plug-in into your Maven, Gradle, or whatever build tool, or even whatever language you have... that will create all the code for this RESTful web-service, for except the implementation.
 
 But you can count on controllers, paths, models, validators and documentation... everything available for the generator you are using (some languages may vary the amount of work the generator does, but you can contribute to improve it). In this example, I'll be showing you the Maven plugin, that integrates the OpenAPI specification, into your java project, using Spring as the controller, and Swagger as documentation.
+
+### Conclusion
+
+As you can see, we can use openapi and these tools to greatly improve how we design RESTful web-services. Not only that, you will get your models, controllers, validators and Swagger documentation always 100% up-to-date for free... I mean almost: It takes some adjusting to the development flow that you will always have to design your API first for all the changes, before applying code.
+
+It is not actually necessary to follow the "contract-first development cycle", because nothing will hold your back and keep you from changing the controllers and creating your own models by yourself... but it will be nice to have your API always reflect the source of truth.
+
+##### Note
+
+The code I showed you here is part of a [proof of concept project](https://github.com/gmcouto/apifirst-tdd-with-karate "API First - TDD for integration tests - On cloud microservice architecture") I have on Github, that uses this and many more cool stuff. **Soon**, I'll be posting the next steps: how to use TDD for the integration tests, and how to write them using BDD.
