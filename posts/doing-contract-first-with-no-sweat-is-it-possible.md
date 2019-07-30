@@ -16,7 +16,9 @@ canonical_url: false
 series: false
 
 ---
-## Is it possible?
+### What is contract-first anyway?
+
+### Is it really doable?
 
 Whenever I heard someone saying that they wanted to start building services using contract-first approach I used to frown on them. Why? It seemed kind of pointless to create all that contract ahead, and see it changes during development.
 
