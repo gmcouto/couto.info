@@ -59,6 +59,7 @@ fields:
   type: boolean
   label: Series
 pages:
+- posts/doing-contract-first-with-no-sweat-is-it-possible.md
 - posts/another-forestry-io-test.md
 - posts/new-post-from-forestry.md
 - posts/test-with-cover-image.md
